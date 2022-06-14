@@ -10,10 +10,10 @@
 
 //Write your code for GenBuzz below this line:
 
-let myNumber = 9;
+let myNumber = false;
 if (typeof myNumber !== "number") {
   console.log("This is not a number.");
-} else if (typeof myNumber === "number") {
+} else {
   if (myNumber % 15 === 0) {
     console.log("GenBuzz");
   } else if (myNumber % 3 === 0) {
@@ -24,6 +24,24 @@ if (typeof myNumber !== "number") {
     console.log(myNumber);
   }
 }
+
+// Genbuzz function that takes myNumber as parameter:
+const genBuzz = (num) => {
+  if (typeof num !== "number") {
+    console.log("This is not a number.");
+  } else {
+    if (num % 15 === 0) {
+      return "GenBuzz";
+    } else if (num % 3 === 0) {
+      return "Gen";
+    } else if (num % 5 === 0) {
+      return "Buzz";
+    } else {
+      return num;
+    }
+  }
+};
+console.log(genBuzz(21));
 
 //2. E-COMMERCE ITEM LIST
 
